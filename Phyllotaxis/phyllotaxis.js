@@ -19,7 +19,7 @@ var Point = function(x, y, hue) {
 	this.draw = function() {
 		ctx.beginPath();
     	ctx.arc(this.x, this.y, 4, 0, 2 * Math.PI, false);
-    	ctx.fillStyle = rgba(0, 0, 0, 0.5);
+    	ctx.fillStyle = 'hsl(' + hue + ',100%, 50%)';
     	ctx.fill();
 		ctx.stroke();
 		ctx.closePath();
